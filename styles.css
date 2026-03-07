@@ -717,3 +717,81 @@ ul {
         font-size: 0.9rem;
     }
 }
+
+/* Nav Actions & Theme Toggle */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.theme-toggle {
+    background: transparent;
+    border: none;
+    color: var(--text-dark);
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.theme-toggle:hover {
+    color: var(--primary);
+    background-color: var(--bg-light);
+}
+
+/* Dark Mode Theme Variables & Utilities */
+body.dark-mode {
+    --bg-light: #0B1120;
+    --bg-white: #0F172A;
+    --text-dark: #F8FAFC;
+    --text-body: #94A3B8;
+    --border: #1E293B;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .navbar {
+    background-color: rgba(15, 23, 42, 0.9);
+}
+
+body.dark-mode .hero {
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-white) 100%);
+}
+
+body.dark-mode .chat-mockup,
+body.dark-mode .message.incoming,
+body.dark-mode .cycle-step,
+body.dark-mode .pain-card,
+body.dark-mode .compare-table,
+body.dark-mode .timeline-content {
+    background: var(--bg-white);
+    color: var(--text-body);
+}
+
+body.dark-mode .message.incoming {
+    color: var(--text-dark);
+}
+
+body.dark-mode .glass-card {
+    background: rgba(15, 23, 42, 0.7);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .compare-table th {
+    background: rgba(15, 23, 42, 0.8);
+}
+
+body.dark-mode .cycle-step.lost-sale {
+    background: rgba(239, 68, 68, 0.1);
+}
+
+body.dark-mode .feature-item:hover {
+    background: var(--bg-light);
+}
