@@ -75,7 +75,7 @@ ul {
 .bg-dark { background-color: var(--secondary); }
 .text-center { text-align: center; }
 .text-primary { color: var(--primary) !important; }
-.text-white { color: var(--bg-white) !important; }
+.text-white { color: #FFFFFF !important; }
 .text-danger { color: var(--danger) !important; }
 .text-success { color: var(--success) !important; }
 .bg-danger-light { background-color: var(--danger-light); }
@@ -562,7 +562,7 @@ ul {
 
 /* Escalamiento */
 .scaling {
-    background: linear-gradient(135deg, var(--secondary), var(--primary-dark));
+    background: linear-gradient(135deg, var(--secondary), var(--primary-hover));
     border-radius: 24px;
     box-shadow: var(--shadow-lg);
     position: relative;
