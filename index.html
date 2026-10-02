@@ -9,12 +9,13 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=4">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -45,24 +46,24 @@
             <div class="shape shape-1"></div>
             <div class="shape shape-2"></div>
         </div>
-        <div class="container hero-content animate-on-scroll">
-            <div class="hero-text">
-                <span class="badge">Inteligencia Conversacional B2C</span>
-                <h1 class="hero-title">Cada mensaje es una <span class="text-gradient">oportunidad de ingreso</span></h1>
-                <p class="hero-subtitle">No son solo dudas, son clientes con intención. <strong>Orby</strong> es la inteligencia conversacional que responde en segundos y cierra ventas mientras tú te enfocas en crecer.</p>
-                <div class="hero-actions">
+        <div class="container hero-content">
+            <div class="hero-text" data-stagger="90">
+                <span class="badge reveal">Inteligencia Conversacional B2C</span>
+                <h1 class="hero-title reveal">Cada mensaje es una <span class="text-gradient">oportunidad de ingreso</span></h1>
+                <p class="hero-subtitle reveal">No son solo dudas, son clientes con intención. <strong>Orby</strong> es la inteligencia conversacional que responde en segundos y cierra ventas mientras tú te enfocas en crecer.</p>
+                <div class="hero-actions reveal">
                     <a href="#contacto" class="btn btn-primary btn-lg">Activa tu empresa 24/7 <i class="fa-solid fa-arrow-right"></i></a>
-                    <a href="#solucion" class="btn btn-outline btn-lg">Descubre cómo funciona</a>
+                    <a href="#solucion" class="btn-link">Descubre cómo funciona <i class="fa-solid fa-chevron-right"></i></a>
                 </div>
             </div>
-            <div class="hero-visual">
+            <div class="hero-visual reveal" style="--d: 240ms">
                 <div class="mockup-container">
                     <div class="chat-mockup">
                         <div class="chat-header">
                             <i class="fa-solid fa-robot"></i>
                             <div>
                                 <span>Orby (Stellar Tech)</span>
-                                <small>En línea</small>
+                                <small class="chat-status">En línea</small>
                             </div>
                         </div>
                         <div class="chat-body">
@@ -87,48 +88,49 @@
 
     <!-- Problem Section -->
     <section class="problem section-padding bg-light" id="problema">
-        <div class="container text-center animate-on-scroll">
-            <h2 class="section-title">La Realidad <span class="text-danger">Incómoda</span></h2>
-            <p class="section-subtitle">El 78% de los clientes compra al primero que responde. Esta es tu fuga de capital actual:</p>
+        <div class="container text-center" data-stagger="80">
+            <h2 class="section-title reveal">La Realidad <span class="text-danger">Incómoda</span></h2>
+            <span class="stat reveal" data-count="78" data-suffix="%">78%</span>
+            <p class="stat-caption reveal">de los clientes compra al primero que responde. Esta es tu fuga de capital actual:</p>
             
-            <div class="cycle-container">
-                <div class="cycle-step">
+            <div class="cycle-container" data-stagger="140">
+                <div class="reveal cycle-step">
                     <div class="icon-circle mb-3"><i class="fa-regular fa-message"></i></div>
                     <h4>Mensaje Entrante</h4>
                     <p>Un prospecto interesado te contacta con intención de compra.</p>
                 </div>
-                <div class="cycle-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-                <div class="cycle-step">
+                <div class="cycle-arrow reveal"><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="reveal cycle-step">
                     <div class="icon-circle mb-3 border-warning"><i class="fa-regular fa-clock"></i></div>
                     <h4>Espera Prolongada</h4>
                     <p>Horarios no hábiles o ejecutivos saturados retrasan la respuesta.</p>
                 </div>
-                <div class="cycle-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-                <div class="cycle-step">
+                <div class="cycle-arrow reveal"><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="reveal cycle-step">
                     <div class="icon-circle mb-3 border-danger"><i class="fa-solid fa-temperature-empty"></i></div>
                     <h4>El Cliente se Enfría</h4>
                     <p>La urgencia desaparece y la frustración aumenta por el mal servicio.</p>
                 </div>
-                <div class="cycle-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-                <div class="cycle-step lost-sale">
+                <div class="cycle-arrow reveal"><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="reveal cycle-step lost-sale">
                     <div class="icon-circle mb-3 border-danger bg-danger-light"><i class="fa-solid fa-store-slash text-danger"></i></div>
                     <h4 class="text-danger">Compra en la Competencia</h4>
                     <p>Pierdes una venta que ya tenías asegurada.</p>
                 </div>
             </div>
 
-            <div class="pain-points grid-3 gap-lg mt-5">
-                <div class="pain-card">
+            <div class="pain-points grid-3 gap-lg" data-stagger="100">
+                <div class="pain-card reveal">
                     <i class="fa-solid fa-user-xmark pain-icon"></i>
                     <h3>Dependencia Humana</h3>
                     <p>Escalar significa contratar más ejecutivos. Tus ventas están limitadas a turnos de 8 horas.</p>
                 </div>
-                <div class="pain-card">
+                <div class="pain-card reveal">
                     <i class="fa-solid fa-clipboard-list pain-icon"></i>
                     <h3>Falta de Seguimiento</h3>
                     <p>Prospectos valiosos se pierden en mares de mensajes por no tener un proceso estructurado.</p>
                 </div>
-                <div class="pain-card">
+                <div class="pain-card reveal">
                     <i class="fa-solid fa-money-bill-trend-up pain-icon"></i>
                     <h3>Ventas Invisibles</h3>
                     <p>¿Cuánto estás perdiendo esta misma madrugada porque nadie está respondiendo?</p>
@@ -139,16 +141,16 @@
 
     <!-- Solution Section -->
     <section class="solution section-padding" id="solucion">
-        <div class="container animate-on-scroll">
-            <div class="text-center mb-5">
-                <span class="badge badge-primary">La Solución</span>
-                <h2 class="section-title">Orby <span class="text-primary">no es un Bot</span></h2>
-                <p class="section-subtitle">No usa frases genéricas ni inventa información. Es una capa de inteligencia entrenada específicamente para tu negocio. Su única filosofía: <strong>Conversación → Acción.</strong></p>
+        <div class="container">
+            <div class="text-center mb-5" data-stagger="80">
+                <span class="badge reveal">La Solución</span>
+                <h2 class="section-title reveal">Orby <span class="text-primary">no es un Bot</span></h2>
+                <p class="section-subtitle reveal">No usa frases genéricas ni inventa información. Es una capa de inteligencia entrenada específicamente para tu negocio. Su única filosofía: <strong>Conversación → Acción.</strong></p>
             </div>
 
             <div class="features-grid grid-2 gap-xl align-center">
                 <div class="feature-visual">
-                    <div class="glass-card">
+                    <div class="glass-card reveal">
                         <div class="feature-pulse">
                             <i class="fa-solid fa-brain"></i>
                         </div>
@@ -161,22 +163,22 @@
                         </ul>
                     </div>
                 </div>
-                <div class="feature-content">
-                    <div class="feature-item">
+                <div class="feature-content" data-stagger="100">
+                    <div class="reveal feature-item">
                         <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
                         <div>
                             <h4>Recomendación de Productos</h4>
                             <p>Analiza lo que el cliente realmente necesita y ofrece un up-sell o cross-sell proactivo de tu catálogo.</p>
                         </div>
                     </div>
-                    <div class="feature-item mt-4">
+                    <div class="reveal feature-item mt-4">
                         <div class="icon-box"><i class="fa-solid fa-handshake-angle"></i></div>
                         <div>
                             <h4>Escalamiento Inteligente</h4>
                         <p>Cuando la conversación lo requiere, Orby escala el caso a un humano de tu equipo con todo el contexto, de forma privada y fluida.</p>
                         </div>
                     </div>
-                    <div class="feature-item mt-4">
+                    <div class="reveal feature-item mt-4">
                         <div class="icon-box"><i class="fa-solid fa-bullseye"></i></div>
                         <div>
                             <h4>Seguimiento Implacable</h4>
@@ -190,13 +192,13 @@
 
     <!-- Comparison Section -->
     <section class="comparison section-padding bg-light" id="comparativa">
-        <div class="container animate-on-scroll">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Manual vs. <span class="text-primary">Orby</span></h2>
-                <p class="section-subtitle">¿Por qué las mejores agencias están automatizando sus canales?</p>
+        <div class="container">
+            <div class="text-center mb-5" data-stagger="80">
+                <h2 class="section-title reveal">Manual vs. <span class="text-primary">Orby</span></h2>
+                <p class="section-subtitle reveal">¿Por qué las mejores agencias están automatizando sus canales?</p>
             </div>
 
-            <div class="table-responsive">
+            <div class="table-responsive reveal">
                 <table class="compare-table">
                     <thead>
                         <tr>
@@ -209,28 +211,28 @@
                             </th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody data-stagger="70">
+                        <tr class="reveal">
                             <td><strong>Disponibilidad</strong></td>
                             <td class="negative"><i class="fa-solid fa-xmark"></i> Horario de oficina (limitado)</td>
                             <td class="positive"><i class="fa-solid fa-check"></i> 24/7 sin interrupciones</td>
                         </tr>
-                        <tr>
+                        <tr class="reveal">
                             <td><strong>Tiempo de Respuesta</strong></td>
                             <td class="negative"><i class="fa-solid fa-xmark"></i> Minutos u horas</td>
                             <td class="positive"><i class="fa-solid fa-check"></i> Segundos (Interacción real-time)</td>
                         </tr>
-                        <tr>
+                        <tr class="reveal">
                             <td><strong>Seguimiento de Prospectos</strong></td>
                             <td class="negative"><i class="fa-solid fa-xmark"></i> Depende de la memoria del ejecutivo</td>
                             <td class="positive"><i class="fa-solid fa-check"></i> Automatizado, basado en reglas de negocio</td>
                         </tr>
-                        <tr>
+                        <tr class="reveal">
                             <td><strong>Consistencia Profesional</strong></td>
                             <td class="negative"><i class="fa-solid fa-xmark"></i> Varía según el ánimo y la persona</td>
                             <td class="positive"><i class="fa-solid fa-check"></i> Tono de marca perfecto el 100% de las veces</td>
                         </tr>
-                        <tr>
+                        <tr class="reveal">
                             <td><strong>Manejo de Altos Volúmenes</strong></td>
                             <td class="negative"><i class="fa-solid fa-xmark"></i> Cuellos de botella y burnout</td>
                             <td class="positive"><i class="fa-solid fa-check"></i> Escalabilidad infinita y paralela</td>
@@ -242,10 +244,10 @@
     </section>
 
     <!-- Scaling Banner -->
-    <section class="scaling text-white my-5 mx-3 animate-on-scroll" id="escalamiento">
+    <section class="scaling text-white reveal reveal-scale" id="escalamiento">
         <div class="container scaling-container text-center">
-            <h2 class="mb-3 text-white">Escala sin romperse</h2>
-            <p class="lead mb-0 mx-auto" style="max-width: 800px; font-size: 1.25rem;">
+            <h2 class="section-title text-white">Escala sin romperse</h2>
+            <p class="scaling-quote mb-0 mx-auto">
                 "No metas más publicidad hasta que tengas un sistema de conversión validado. Sin la infraestructura adecuada, tu tráfico pagado simplemente se desperdicia."
             </p>
         </div>
@@ -253,35 +255,36 @@
 
     <!-- Implementation Section -->
     <section class="implementation section-padding" id="implementacion">
-        <div class="container animate-on-scroll">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Time-to-Value: <span class="text-primary">7 Días</span></h2>
-                <p class="section-subtitle">No pasamos meses desarrollando. Nuestro proceso de implementación es rápido, quirúrgico y orientado a generar ROI desde la primera semana.</p>
+        <div class="container">
+            <div class="text-center mb-5" data-stagger="80">
+                <h2 class="section-title reveal">Time-to-Value: <span class="text-primary">7 Días</span></h2>
+                <p class="section-subtitle reveal">No pasamos meses desarrollando. Nuestro proceso de implementación es rápido, quirúrgico y orientado a generar ROI desde la primera semana.</p>
             </div>
 
             <div class="timeline">
-                <div class="timeline-item">
+                <div class="timeline-progress" aria-hidden="true"></div>
+                <div class="timeline-item reveal">
                     <div class="timeline-marker">1</div>
                     <div class="timeline-content">
                         <h3>Día 1-2: Extracción y Entrenamiento</h3>
                         <p>Absorbemos toda la información de tu empresa (PDFs, FAQs, Catálogos, Historial de chats) para crear el cerebro de Orby sin alucinaciones.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item reveal">
                     <div class="timeline-marker">2</div>
                     <div class="timeline-content">
                         <h3>Día 3-4: Configuración de Flujos</h3>
                         <p>Diseñamos los caminos conversacionales. ¿Qué pasa si piden precios? ¿Qué pasa si están enojados? ¿Cómo se agenda una cita?</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item reveal">
                     <div class="timeline-marker">3</div>
                     <div class="timeline-content">
                         <h3>Día 5-6: Integración Técnica</h3>
                         <p>Conectamos Orby a tus canales actuales (Instagram, Web) para que la información fluya sin fricción humana.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item reveal">
                     <div class="timeline-marker">4</div>
                     <div class="timeline-content">
                         <h3>Día 7: Prueba Controlada y Lanzamiento</h3>
@@ -294,14 +297,14 @@
 
     <!-- Footer / Final CTA -->
     <footer class="footer bg-dark text-white text-center" id="contacto">
-        <div class="container animate-on-scroll">
-            <h2 class="text-white mb-4">Deja de perder ventas hoy mismo</h2>
-            <p class="mb-5" style="opacity: 0.8;">Agenda una demostración y descubre cuánto está dejando sobre la mesa tu proceso actual.</p>
-            <a href="https://n8n.stellartech.cloud/form/775f26d5-a276-4abb-b5a0-72bd28b42b44" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Quiero implementar Orby</a>
+        <div class="container" data-stagger="90">
+            <h2 class="section-title text-white reveal">Deja de perder ventas hoy mismo</h2>
+            <p class="footer-lead mb-5 reveal">Agenda una demostración y descubre cuánto está dejando sobre la mesa tu proceso actual.</p>
+            <a href="https://n8n.stellartech.cloud/form/775f26d5-a276-4abb-b5a0-72bd28b42b44" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg reveal">Quiero implementar Orby</a>
             
-            <div class="footer-bottom mt-5 pt-4 border-top" style="border-color: rgba(255,255,255,0.1) !important;">
+            <div class="footer-bottom mt-5">
                 <div class="social-icons mb-3">
-                    <a href="https://www.instagram.com/stellar.tech.cloud/" target="_blank" rel="noopener noreferrer" class="text-white" style="font-size: 1.8rem; transition: opacity 0.3s;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1" aria-label="Instagram de Stellar Tech">
+                    <a href="https://www.instagram.com/stellar.tech.cloud/" target="_blank" rel="noopener noreferrer" class="social-link text-white" aria-label="Instagram de Stellar Tech">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
                 </div>
@@ -310,6 +313,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=4"></script>
 </body>
 </html>
